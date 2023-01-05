@@ -12,6 +12,7 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
+ipv6: true
 proxies:
   - {"type":"ss","name":"JP_via_debian","server":"debian.hubl.ml","port":63345,"cipher":"aes-128-gcm","password":"zky2198828"}
   - {"type":"vmess","name":"hubl_cloud","ws-opts":{"path":"/","headers":{"host":"v2.hubl.ml"}},"server":"v2.hubl.ml","port":"443","uuid":"7e664bb8-d1b3-4cd4-b444-8f3db7f1b197","alterId":"233","cipher":"auto","network":"ws","tls":true}
