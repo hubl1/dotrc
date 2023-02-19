@@ -16,6 +16,10 @@ ipv6: true
 proxies:
   - {"type":"ss","name":"JP_via_debian","server":"debian.hubl.ml","port":63345,"cipher":"aes-128-gcm","password":"zky2198828"}
   - {"type":"vmess","name":"hubl_cloud","ws-opts":{"path":"/","headers":{"host":"v2.hubl.ml"}},"server":"v2.hubl.ml","port":"443","uuid":"7e664bb8-d1b3-4cd4-b444-8f3db7f1b197","alterId":"233","cipher":"auto","network":"ws","tls":true}
+  - {name: 🇯🇵 日本高级 IEPL 中继 1, server: shdata1.akihuahua.xyz, port: 12011, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 164e1f5d4d.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本高级 IEPL 中继 2, server: shdata1.akihuahua.xyz, port: 12012, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 164e1f5d4d.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本高级 IEPL 中继 3, server: shdata1.akihuahua.xyz, port: 12013, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 164e1f5d4d.douyincdn.com}, udp: true}
+    
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -47,6 +51,14 @@ proxy-groups:
       - 🎯 全球直连
       - JP_via_debian
       - hubl_cloud
+  - name: OpenAI
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇯🇵 日本高级 IEPL 中继 1
+      - 🇯🇵 日本高级 IEPL 中继 2
+      - 🇯🇵 日本高级 IEPL 中继 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -86,6 +98,7 @@ proxy-groups:
       - JP_via_debian
       - hubl_cloud
 rules:
+  - DOMAIN-SUFFIX,openai.com,OpenAI
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
