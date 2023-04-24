@@ -108,6 +108,7 @@ proxy-groups:
       - JP_via_debian
       - hubl_cloud
 rules:
+  - DOMAIN-SUFFIX,tiktok.com,🚀 节点选择
   - DOMAIN-SUFFIX,openai.com,OpenAI
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
