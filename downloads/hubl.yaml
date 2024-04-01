@@ -185,19 +185,6 @@ proxies:
     proxies:
       - Proxies
       - DIRECT
-  - name: Apple
-    type: select
-    proxies:
-      - Proxies
-      - DIRECT
-  - name: Article
-    type: select
-    proxies:
-      - debian
-  - name: Pluto
-    type: select
-    proxies:
-      - US_wubg
 rules:
  - DOMAIN-SUFFIX,aps.org,Article
  - DOMAIN-SUFFIX,wenzhao.ca,Proxies
