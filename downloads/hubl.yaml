@@ -189,118 +189,59 @@ proxies:
     type: select
     proxies:
       - Proxies
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: Netflix
     type: select
     proxies:
       - Proxies
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: Disney
     type: select
     proxies:
       - Proxies
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: Bahamut
     type: select
     proxies:
       - Proxies
-      - HK
-      - TW
   - name: Bilibili
     type: select
     proxies:
       - DIRECT
-      - HK
-      - TW
   - name: Spotify
     type: select
     proxies:
       - Proxies
       - DIRECT
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: Steam
     type: select
     proxies:
       - Proxies
       - DIRECT
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: Telegram
     type: select
     proxies:
       - Proxies
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: Google
     type: select
     proxies:
       - Proxies
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: Microsoft
     type: select
     proxies:
       - Proxies
       - DIRECT
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: OpenAI
     type: select
     proxies:
       - Proxies
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: PayPal
     type: select
     proxies:
       - Proxies
       - DIRECT
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: Apple
     type: select
     proxies:
       - Proxies
       - DIRECT
-      - HK
-      - JP
-      - SG
-      - TW
-      - US
   - name: Article
     type: select
     proxies:
