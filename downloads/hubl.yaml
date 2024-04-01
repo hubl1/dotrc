@@ -173,6 +173,7 @@ proxies:
   - {"type":"ss","name":"debian","server":"debian.hubl.ml","port":63234,"cipher":"aes-128-gcm","password":"zky2198828"}
   - {"type":"ss","name":"jp6","server":"jp6.hubl.ml","port":63345,"cipher":"aes-128-gcm","password":"zky2198828"}
   - {"type":"vmess","name":"hubl_cloud","ws-opts":{"path":"/","headers":{"host":"v2.hubl.ml"}},"server":"v2.hubl.ml","port":"443","uuid":"7e664bb8-d1b3-4cd4-b444-8f3db7f1b197","alterId":"233","cipher":"auto","network":"ws","tls":true}
+proxy-groups:
   - name: Proxies
     type: select
     proxies:
@@ -185,10 +186,73 @@ proxies:
     proxies:
       - Proxies
       - DIRECT
+  - name: YouTube
+    type: select
+    proxies:
+      - Proxies
+  - name: Netflix
+    type: select
+    proxies:
+      - Proxies
+  - name: Disney
+    type: select
+    proxies:
+      - Proxies
+  - name: Bahamut
+    type: select
+    proxies:
+      - Proxies
+  - name: Bilibili
+    type: select
+    proxies:
+      - DIRECT
+  - name: Spotify
+    type: select
+    proxies:
+      - Proxies
+      - DIRECT
+  - name: Steam
+    type: select
+    proxies:
+      - Proxies
+      - DIRECT
+  - name: Telegram
+    type: select
+    proxies:
+      - Proxies
+  - name: Google
+    type: select
+    proxies:
+      - Proxies
+  - name: Microsoft
+    type: select
+    proxies:
+      - Proxies
+      - DIRECT
+  - name: OpenAI
+    type: select
+    proxies:
+      - Proxies
+  - name: PayPal
+    type: select
+    proxies:
+      - Proxies
+      - DIRECT
+  - name: Apple
+    type: select
+    proxies:
+      - Proxies
+      - DIRECT
+  - name: Article
+    type: select
+    proxies:
+      - debian
+  - name: Pluto
+    type: select
+    proxies:
+      - US_wubg
 rules:
- - DOMAIN-SUFFIX,aps.org,Article
  - DOMAIN-SUFFIX,wenzhao.ca,Proxies
- - DOMAIN-SUFFIX,pluto.tv,Pluto
  - DOMAIN-SUFFIX,hubl.ml,DIRECT
  - DOMAIN-SUFFIX,sanguosha.com,DIRECT
  - DOMAIN,app.adjust.com,DIRECT
